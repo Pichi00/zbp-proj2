@@ -1,6 +1,5 @@
 /*
-Celem tego przykładu jest zademonstrowanie procesu trenowania i oceny klasyfikatora perceptronu średniego na przykłądowym zbiorze danych
-dotyczących głosów w Kongresie USA
+Przykład trenowania i oceny klasyfikatora perceptronu średniego na zbiorze danych dotyczących głosów w Kongresie USA
 
 Rezultatem jest wyświetlenie zestawu danych treningowych i testowych oraz podsumowanie wydajności modelu na danych testowych.
 Podsumowanie zawiera wskaźniki takie jak precision, recall i f1-score, które pozwalają ocenić skuteczność klasyfikatora perceptronu średniego.

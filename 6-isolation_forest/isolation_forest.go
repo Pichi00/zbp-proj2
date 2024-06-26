@@ -1,5 +1,5 @@
 /*
-Celem przykładu jest zademonstrowanie, jak z pomocą biblioteki goLearn wykorzystać model Isolation Forest do wykrywania wartości odstających.
+Przykład demonstrujący, jak z pomocą biblioteki goLearn wykorzystać model Isolation Forest do wykrywania wartości odstających.
 
 Rezultatem jest wyświetlenie wartości z pliku gaussian_outliers.csv wraz z przypisanymi wynikami anomalii.
 Wyniki te pokazują, które wartości są uznawane za odstające przez model Isolation Forest.

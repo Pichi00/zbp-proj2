@@ -1,3 +1,7 @@
+/*
+Przykład ilustruje, jak załadować zestaw danych, uzyskać atrybuty tego zestawu i serializować je do formatu JSON przy użyciu biblioteki goLearn.
+*/
+
 package main
 
 import (

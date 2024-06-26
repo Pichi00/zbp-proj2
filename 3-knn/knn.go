@@ -1,3 +1,10 @@
+/*
+Przykład ilustruje użycie biblioteki goLearn do przeprowadzenia klasyfikacji na zbiorze danych irysów (Iris) przy użyciu algorytmu k-Nearest Neighbors.
+Celem jest zademonstrowanie,jak załadować dane, podzielić je na zestawy treningowe i testowe, wytrenować model k-NN,
+dokonać predykcji oraz ocenić jego dokładność.
+
+*/
+
 package main
 
 import (
@@ -35,12 +42,13 @@ func main() {
 		panic(fmt.Sprintf("Nie udało się przeprowadzić predykcji: %v", err))
 	}
 
-	// Ocena dokładności klasyfikatora
+	// Wygenerowanie macierzy pomyłek
 	confusionMat, err := evaluation.GetConfusionMatrix(testData, predictions)
 	if err != nil {
 		panic(fmt.Sprintf("Nie udało się obliczyć macierzy pomyłek: %v", err))
 	}
 
+	// Ocena klasyfikatora
 	accuracy := evaluation.GetAccuracy(confusionMat)
 	fmt.Printf("Dokładność klasyfikatora k-NN: %.2f%%\n", accuracy*100)
 
