@@ -26,8 +26,14 @@ func main() {
 		panic(err)
 	}
 
+	// Parametry klasyfikatora
+	features := 10           // Liczba cech (atrybutów) w danych wejściowych
+	learningRate := 1.2      // Współczynnik uczenia
+	startingThreshold := 0.5 // Początkowy próg decyzyjny
+	trainError := 0.3        // Błąd treningowy
+
 	// Utworzenie klasyfikatora perceptronu średniego
-	cls := perceptron.NewAveragePerceptron(10, 1.2, 0.5, 0.3)
+	cls := perceptron.NewAveragePerceptron(features, learningRate, startingThreshold, trainError)
 
 	// Podział na dane treningowe i testowe
 	trainData, testData := base.InstancesTrainTestSplit(rawData, 0.50)
