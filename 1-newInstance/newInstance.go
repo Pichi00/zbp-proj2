@@ -1,3 +1,8 @@
+/*
+Przykład prezentujący jak utworzyć i wypełnić nowy zestaw danych (dataset) przy użyciu biblioteki goLearn.
+Zestaw danych zawiera zarówno atrybuty liczbowe (liczby zmiennoprzecinkowe), jak i kategoryczne
+*/
+
 package main
 
 import (

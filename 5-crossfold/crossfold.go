@@ -3,7 +3,10 @@
 	(Random Forest). Celem tego przykładu jest zademonstrowanie wpływu liczby drzew w lesie losowym na dokładność klasyfikacji oraz porównanie wyników z
 	oraz bez dyskretyzacji danych.
 
-	Rezultatem jest wydrukowanie tabeli wyników, która pokazuje, jak zmienia się dokładność klasyfikacji (wraz z odchyleniem) w zależności od liczby drzew w lesie losowym. Oczekuje się, że wraz ze wzrostem liczby drzew, dokładność modelu będzie się poprawiać, a odchylenie standardowe będzie się zmniejszać, co oznacza większą stabilność modelu.
+	Rezultatem jest wydrukowanie tabeli wyników, która pokazuje, jak zmienia się dokładność klasyfikacji (wraz z odchyleniem)
+	w zależności od liczby drzew w lesie losowym.
+	Oczekuje się, że wraz ze wzrostem liczby drzew, dokładność modelu będzie się poprawiać, a odchylenie standardowe będzie się zmniejszać,
+	co oznacza większą stabilność modelu.
 */
 
 package main
