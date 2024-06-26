@@ -22,7 +22,7 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	// Załadowanie danych z pliku ARFF
-	rawData, err := base.ParseCSVToInstances("../datasets/iris_headers.csv", true)
+	rawData, err := base.ParseCSVToInstances("datasets/iris_headers.csv", true)
 	if err != nil {
 		panic(fmt.Sprintf("Nie udało się załadować danych: %v", err))
 	}
