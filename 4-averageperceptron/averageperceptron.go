@@ -17,7 +17,7 @@ import (
 )
 
 func main() {
-
+	// Ustawienie ziarna losowości
 	rand.Seed(4402201)
 
 	// Wczytanie danych z datasetu

@@ -1,7 +1,6 @@
 /*
 	Przykład  ilustruje użycie biblioteki goLearn do przeprowadzenia klasyfikacji na zbiorze danych irysów przy użyciu algorytmu lasu losowego
-	(Random Forest). Celem tego przykładu jest zademonstrowanie wpływu liczby drzew w lesie losowym na dokładność klasyfikacji oraz porównanie
-	wyników z oraz bez dyskretyzacji danych.
+	(Random Forest). Celem tego przykładu jest zademonstrowanie wpływu liczby drzew w lesie losowym na dokładność klasyfikacji
 
 	Rezultatem jest wydrukowanie tabeli wyników, która pokazuje, jak zmienia się dokładność klasyfikacji (wraz z odchyleniem)
 	w zależności od liczby drzew w lesie losowym.
@@ -36,6 +35,7 @@ func main() {
 
 		// Tworzenie nowego lasu z coraz większą ilością drzew
 		tree = ensemble.NewRandomForest(i, 4)
+
 		// Walidacja krzyżowa z pięcioma podziałami (5-fold cross-validation)
 		cfs, err := evaluation.GenerateCrossFoldValidationConfusionMatrices(iris, tree, 5)
 		if err != nil {

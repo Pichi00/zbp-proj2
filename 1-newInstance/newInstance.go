@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	// Definicja atrybutów: pierwszy to liczba zmiennoprzecinkowa (Ocena), drugi to atrybut kategoryczny (Przedmiot)
+	// Definicja atrybutów: pierwsze dwa to liczby zmiennoprzecinkowe (X, Y), trzeci to atrybut kategoryczny (Klasa)
 	attrs := make([]base.Attribute, 3)
 	attrs[0] = base.NewFloatAttribute("X")
 	attrs[1] = base.NewFloatAttribute("Y")
@@ -28,7 +28,7 @@ func main() {
 		newSpecs[i] = newInst.AddAttribute(a)
 	}
 
-	// Rozszerzenie zestawu danych o dwa wiersze
+	// Rozszerzenie zestawu danych o trzy wiersze
 	newInst.Extend(3)
 
 	// Ustawienie wartości dla pierwszego wiersza
